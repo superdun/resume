@@ -1,0 +1,131 @@
+{% set source = source %}
+{% extends '/'+source+'/base.html' %}
+{% block content %}
+{#    <div id="lang-panel">#}
+{#        <a class="lang selected" href="#">中</a>#}
+{#        <a class="lang" href="index.html">En</a>#}
+{#    </div>#}
+    <div id="lang-panel">
+        <h4 class="source">For:{{ source }}</h4>
+    </div>
+    <div id="pagepiling">
+        <div class="section center" id="home">
+            <img id="avatar" src="{{ url_for('static',filename='img/avatar.jpg') }}"/>
+            <h1 id="title">李盾</h1>
+            <p id="subtitle">在读化工硕士，热爱编程</p>
+            <h4>化工/Python/PHP/Linux</h4>
+
+
+            <h6><a href="https://github.com/superdun" target="_blank">GitHub</a></h6>
+            <p><a href="mailto:475098936@qq.com">475098936@qq.com</a></p>
+            <p>tel:13061938526</p>
+            <p>上海，徐汇</p>
+        </div>
+
+        <div class="section" id="project">
+            <h1>项目经验</h1>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="cnproject/lumpedmodel?source={{ source }}" target="_blank">
+                        <img src="{{ url_for('static',filename='img/zhujianer.png') }}" alt="集总模型软件"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="cnproject/lumpedmodel?source={{ source }}" target="_blank">集总模型软件</a></h2>
+                    <p>化工/Python/Scipy/Numpy</p>
+                    <p><b>独立开发</b>重油催化裂化集总模型桌面软件一套</p>
+                </div>
+                <div class="col-2 center">
+                    <a class="circle-img" href="/cnproject/refine?source={{ source }}" target="_blank">
+                        <img src="{{ url_for('static',filename='img/jwebaudio.png') }}" alt="精馏计算"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/cnproject/refine?source={{ source }}" target="_blank">精馏计算软件</a></h2>
+                    <p>化工/JavaScript</p>
+                    <p><b>独立开发</b>理想状态下计算精馏塔各参数并绘图。<a href="http://ecustmaker.com/refine">查看Demo</a></p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="/cnproject/children?source={{ source }}" target="_blank">
+                        <img src="{{ url_for('static',filename='img/book.png') }}" alt="走失儿童"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/cnproject/children?source={{ source }}" target="_blank">走失儿童数据分析</a></h2>
+                    <p>Python/网络爬虫/数据图形化/数据分析</p>
+                    <p><b>独立开发</b>抓取走失儿童信息 编写数据处理脚本，对数据进行处理筛选。<a>查看分析报告</a></p>
+                </div>
+                <div class="col-2 center">
+                    <a class="circle-img" href="/cnproject/guijia?source={{ source }}"
+                       target="_blank">
+                        <img src="{{ url_for('static',filename='img/chrome.png') }}" alt="归家网"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/cnproject/guijia?source={{ source }}" target="_blank">归家网（guijia.org）</a></h2>
+                    <p>Python/网络爬虫/flask/MySQL/Web</p>
+                    <p><b>独立开发</b>编写并运营公益性网站——归家网。<a href="guijia.org">查看归家网</a></p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="/cnproject/lottery?source={{ source }}" target="_blank">
+                        <img src="{{ url_for('static',filename='img/biangua.png') }}" alt="公司抽奖系统"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/cnproject/lottery?source={{ source }}" target="_blank">公司抽奖系统</a></h2>
+                    <p>PHP/MySQL/JavaScript</p>
+                    <p>承载百万次的用户抽奖活动</p>
+                </div>
+                <div class="col-2 center">
+                    <a class="circle-img" href="/cnproject/makerspace?source={{ source }}" target="_blank">
+                        <img src="{{ url_for('static',filename='img/jcorner.png') }}" alt="jCorner"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/cnproject/makerspace?source={{ source }}" target="_blank">华东理工大学社团创客空间</a></h2>
+                    <p>Python/Arduino/传感器/树莓派</p>
+                    <p>与机械学院同学创建了‘华理创客空间’，使用 Arduino 硬件开发了众多作品，如激光雕刻机 3D 扫描仪等</p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <p class="center"><a href="https://github.com/superdun " target="_blank" class="highlight">GitHub</a>
+            </p>
+        </div>
+
+        <div class="section center">
+            <h1>教育背景</h1>
+            <h4>华东理工大学 硕士研究生在读</h4>
+            <p>2015.9 至今</p>
+            <p>化工学院 油气储运专业</p>
+            <p>研二</p>
+            <p>研究课题与化工建模软件构建有关</p>
+            <br>
+            <h4>大连理工大学 本科</h4>
+            <p>化工学院 化学工程与工艺 创新实验班</p>
+            <p>2009.9-2013.6</p>
+            <p>研究课题与药物有效成分分析有关</p>
+        </div>
+
+        <div class="section center">
+            <h1>工作/实习经历</h1>
+            <h4>I华尔街见闻 后端工程师（实习）</h4>
+            <p>2016年5月 至今</p>
+            <p>公司网站与 App 的 Linux 服务器端的运行维护与新增功能编写</p>
+            <p>相关技术：Web , PHP ,LINUX ,MySQL</p>
+<br>
+
+            <h4>中国石油新疆油田公司 助理工程师</h4>
+            <p>2013年7月 - 2014年9月</p>
+            <p>负责油田污水的处理操作与检测</p>
+            <p>三次获得公司优秀实习生称号</p>
+
+        </div>
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=100%, initial-scale=1" />
+        <title>李盾----Li Dun</title>
+        <link rel="shortcut icon" href="{{ url_for('static',filename='img/owl.ico') }}" />
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery.pagepiling.css') }}" type="text/css" />
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" type="text/css" />
+    </head>
+
+    <body>
+
+{% block content %}{% endblock %}
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/font.css') }}" type="text/css" />
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../blog/js/jquery-1.11.1.min.js"><\/script>');</script>
+        <script type="text/javascript" src="{{ url_for('static',filename='vendor/jquery.pagepiling.min.j') }}s"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/index.min.js') }}"></script>
+
+    </body>
+</html>
