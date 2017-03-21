@@ -32,7 +32,7 @@ def chinesePorject(name):
         return render_template('%s/cn%s.html' % (source, name),source=source)
     else:
         return render_template('index.html' )
-
+application=app
 
 if __name__ == '__main__':
     app.run(port=8081)
