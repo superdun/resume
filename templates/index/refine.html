@@ -1,0 +1,41 @@
+{% set source = source %}
+{% extends '/'+source+'/detailbase.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <h2 class="col offset-l1"><img class="circle"
+                                           src="{{ url_for('static',filename='img/avatar.jpg') }}">Li Dun</h2>
+            <p class="col offset-l6">Master of Chemical Engineering，Programming Lover</p>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s10 offset-l1">
+                <h1 id="title">Distillation Process Calculation Software</h1></div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2" style="text-align: center">
+                <h4>Chemical Industry/JavaScript</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/refine2.png') }}">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/refine1.png') }}">
+                    <h2>
+                        <a href="http://ecustmaker.com/refine"
+                           target="_blank">To View the DEMO</a></h2>
+                    <p class="blackp">A application for calculating the parameters of the distillation column and drawing plots.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% set source = source %}
+{% extends '/'+source+'/detailbase.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <h2 class="col offset-l1"><img class="circle"
+                                           src="{{ url_for('static',filename='img/avatar.jpg') }}">李盾</h2>
+            <p class="col offset-l6">在读化工硕士，热爱编程</p>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s10 offset-l1">
+                <h1 id="title">归家网（guijia.org）</h1></div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2" style="text-align: center">
+                <h4>所用技术：Python/Web Crawler/flask/MySQL/Web</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/guijia1.png') }}">
+                    <h2><a href="http://guijia.org" target="_blank">查看归家网</a></h2>
+                    <p class="blackp">编写并运营公益性网站——归家网。</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                                        <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/guijia2.png') }}">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/guijia3.png') }}">
+                    <p class="blackp">通过对接人脸识别接口，实现了上传照片与失踪人口图片比对，打破了原有寻
+                        亲网站信息沟通不畅的弊端</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}

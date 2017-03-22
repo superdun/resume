@@ -1,0 +1,130 @@
+{% set source = source %}
+{% extends '/'+source+'/base.html' %}
+{% block content %}
+        <div id="lang-panel">
+            <a class="lang" href="/cn">中</a>
+            <a class="lang selected" href="#">En</a>
+        </div>
+    <div id="pagepiling">
+        <div class="section center" id="home">
+            <img id="avatar" src="{{ url_for('static',filename='img/avatar.jpg') }}"/>
+            <h1 id="title">Li Dun</h1>
+            <p id="subtitle">Master of Chemical Engineering，Programming Lover</p>
+            <h4>Chemical Industry/Python/PHP/Linux</h4>
+
+
+            <h6><a href="https://github.com/superdun" target="_blank">GitHub</a></h6>
+            <p><a href="mailto:475098936@qq.com">475098936@qq.com</a></p>
+            <p>tel:13061938526</p>
+            <p>Xuhui,Shanghai,China</p>
+        </div>
+
+        <div class="section" id="projects">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="project/lumpedmodel" target="_blank">
+                        <img src="{{ url_for('static',filename='img/zhujianer.png') }}" alt=" Lumped Model Software"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="project/lumpedmodel" target="_blank"> Lumped Model Software</a></h2>
+                    <p>Chemical Industry/Python/Scipy/Numpy</p>
+                    <p><b>[Independent] </b>Build a desktop software based on a mathematical model</p>
+                </div>
+                <div class="col-2 center">
+                    <a class="circle-img" href="/project/refine" target="_blank">
+                        <img src="{{ url_for('static',filename='img/jwebaudio.png') }}" alt="Distillation Process Calculation Software"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/project/refine" target="_blank">Distillation Process Calculation Software</a></h2>
+                    <p>Chemical Industry/JavaScript</p>
+                    <p><b>[Independent] </b>A application for calculating the parameters of the distillation column and drawing plots.<br><a href="http://ecustmaker.com/refine">To View the Demo</a></p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="/project/children" target="_blank">
+                        <img src="{{ url_for('static',filename='img/book.png') }}" alt="Analysis of Data for Lost Children"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/project/children" target="_blank">Analysis of Data for Lost Children</a></h2>
+                    <p>Python/Web Crawler/Data Visualization/Data Analysis</p>
+                    <p><b>[Independent]  </b>Crawled information of lost children by script, analyzed the data,prepared a data analysis report.
+                        <br><a
+                            href="https://mp.weixin.qq.com/s?__biz=MzI1NDAyNzQ3MA==&mid=100000008&idx=1&sn=b57f53f691a5b6f5dc46c38af979338b&chksm=69ca32a95ebdbbbf2c11fe42231b8b8163f154cbf9193f54bf50c1e7d8f1e6b0050358434f6f&mpshare=1&scene=1&srcid=0320iqYndh4FOw8oD047p3eN&pass_ticket=ApF8GTHrypRy8viUg4QWMmkbs9L7clUrvB2Mekn0Sgq24Itgv3hYOYHAgu25MCvi#rd">To View The Report</a>
+                    </p>
+                </div>
+                <div class="col-2 center">
+                    <a class="circle-img" href="/project/guijia"
+                       target="_blank">
+                        <img src="{{ url_for('static',filename='img/chrome.png') }}" alt="guijia.org"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/project/guijia" target="_blank">guijia.org</a></h2>
+                    <p>Python/Web Crawler/flask/MySQL/Web</p>
+                    <p><b>[Independent] </b>Guijia.org is a public welfare website based on face recognition.<br><a href="http://guijia.org">To View guijia.org</a></p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="/project/lottery" target="_blank">
+                        <img src="{{ url_for('static',filename='img/biangua.png') }}" alt="Online Lottery System"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/project/lottery" target="_blank">Online Lottery System</a></h2>
+                    <p>PHP/MySQL/JavaScript</p>
+                    <p>An online lottery System for carrying millions of visits</p>
+                </div>
+                <div class="col-2 center">
+                    <a class="circle-img" href="/project/makerspace" target="_blank">
+                        <img src="{{ url_for('static',filename='img/jcorner.png') }}" alt="ECUST Makerspace"/>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <h2><a href="/project/makerspace" target="_blank">ECUST Makerspace</a></h2>
+                    <p>Python/Arduino/Sensors/Raspberry Pie</p>
+                    <p>Developed a number of works with Arduino hardware, such as laserengraving machine and 3D scanners</p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <p class="center"><a href="https://github.com/superdun " target="_blank" class="highlight">GitHub</a>
+            </p>
+        </div>
+
+        <div class="section center" id="Education">
+            <h1>Education</h1>
+            <h4>East China University of Science and Technology Master</h4>
+            <p>2015.9 to Present</p>
+            <p>Oil and gas storage and transportation</p>
+            <p>Construction of chemical industry model software</p>
+            <br>
+            <h4>Dalian University of Technology Bachelor</h4>
+            <p>Chemical engineering and technology</p>
+            <p>2009.9-2013.6</p>
+            <p>Analysis of active ingredients of drugs</p>
+        </div>
+
+        <div class="section center" id="Internship">
+            <h1>Internship/Job</h1>
+            <h4>Technical Department of Wallstreetcn</h4>
+            <p>2016.5 to Present</p>
+            <p>Duty : Operation , maintenance and creation of new features forLinux server of website and App</p>
+            <p>Web , PHP ,LINUX ,MySQL</p>
+            <br>
+
+            <h4>Assistant Engineer of Petrochina </h4>
+            <p>2013.7 - 2014.9</p>
+            <p>Treatment of oilfield wastewater</p>
+            <p>Excellent Intern for 3 times</p>
+
+        </div>
+
+
+{% endblock %}

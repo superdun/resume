@@ -1,0 +1,51 @@
+{% set source = source %}
+{% extends '/'+source+'/detailbase.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <h2 class="col offset-l1"><img class="circle"
+                                           src="{{ url_for('static',filename='img/avatar.jpg') }}">李盾</h2>
+            <p class="col offset-l6">Master of Chemical Engineering，Programming Lovers</p>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s10 offset-l1">
+                <h1 id="title">Analysis of Data for Lost Children</h1></div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2" style="text-align: center">
+                <h4>Python/Web Crawler/Data Visualization/Data Analysis</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/children4.png') }}">
+                    <p class="blackp">Crawled  information of lost children by script</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/children1.png') }}">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/children2.png') }}">
+                    <h2>
+                        <a href="https://mp.weixin.qq.com/s?__biz=MzI1NDAyNzQ3MA==&mid=100000008&idx=1&sn=b57f53f691a5b6f5dc46c38af979338b&chksm=69ca32a95ebdbbbf2c11fe42231b8b8163f154cbf9193f54bf50c1e7d8f1e6b0050358434f6f&mpshare=1&scene=1&srcid=0320iqYndh4FOw8oD047p3eN&pass_ticket=ApF8GTHrypRy8viUg4QWMmkbs9L7clUrvB2Mekn0Sgq24Itgv3hYOYHAgu25MCvi#rd"
+                           target="_blank">To View The Report</a></h2>
+                    <p class="blackp">Analyzed the data,prepared a data analysis report</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% set source = source %}
+{% extends '/'+source+'/detailbase.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <h2 class="col offset-l1"><img class="circle"
+                                           src="{{ url_for('static',filename='img/avatar.jpg') }}">李盾</h2>
+            <p class="col offset-l6">Master of Chemical Engineering，Programming Lover</p>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s10 offset-l1">
+                <h1 id="title">Lumped Model Software</h1></div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2" style="text-align: center">
+                <h4>Chemical Industry/Python/PHP/Linux</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="#">
+                    <p class="blackp">Build a desktop software based on a mathematical model</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/model1.png') }}">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/model2.png') }}">
+                    <img class="responsive-img fullWidth"
+                         src="{{ url_for('static',filename='img/'+source +'/model3.png') }}">
+                    <p class="blackp">Make 2D/3D plots by the result automatically</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="#">
+                    <p class="blackp">Optimize the algorithm</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="#">
+                    <p class="blackp">Enhance scalability</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 offset-l2 sec">
+                <div class="col s12">
+                    <img class="responsive-img fullWidth"
+                         src="#">
+                    <p class="blackp">Get the most suitable factors</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
