@@ -1,10 +1,17 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,redirect,request
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
+    if request.args.has_key('source'):
+        source = request.args['source']
+        return redirect('en?source=%s'%source)
+    else:
+        return redirect('en')
+@app.route('/en')
+def englishIndex():
     if request.args.has_key('source'):
         source = request.args['source']
         return render_template('%s/index.html'%source,source=source)
@@ -21,9 +28,9 @@ def chineseIndex():
 def porject(name):
     if request.args.has_key('source'):
         source = request.args['source']
-        return render_template('%s/%s.html' % (source, name))
+        return render_template('%s/%s.html' % (source, name),source=source)
     else:
-        return render_template('index.html' )
+        return render_template('index.html')
 @app.route('/cnproject/<name>')
 def chinesePorject(name):
     if request.args.has_key('source'):

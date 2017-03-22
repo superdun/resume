@@ -42,7 +42,7 @@ h6 {
 
 p {
     font-size: 1.1em;
-    margin: 0.5em 0
+    margin: 0.6em 0
 }
 
 ul {
@@ -89,7 +89,10 @@ a.highlight:hover {
 }
 
 p {
-    color: #aee2d9
+    color: #c9e2de
+}
+p:hover {
+    color: #e2d4d5
 }
 
 h1 {
@@ -483,32 +486,52 @@ ul {
 .mobile #project.section {
     text-align: center
 }
+
 .source {
     color: whitesmoke;
 }
-.circle{
+
+.circle {
     width: 40px;
     height: 40px;
+    vertical-align:middle;
 }
-.card-panel{
+
+.card-panel {
     color: #eef3f0;
     background-color: #22c3aa;
 }
+
 .fullWidth {
     width: 100%;
 }
+
 nav {
     background-color: #22c3aa;
     color: #eef3f0;
 }
-body{
+
+body {
     background-color: #22c3aa;
     color: #eef3f0;
 }
-h2{
-   color: #eef3f0;
+
+h2 {
+    color: #eef3f0;
 }
-.sec{
+
+.sec {
     margin: 10px;
+}
+
+#logo-panel {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+#logo{
+    vertical-align:middle;
 }
 
