@@ -28,7 +28,6 @@ def porject(name):
 def chinesePorject(name):
     if request.args.has_key('source'):
         source = request.args['source']
-        print source
         return render_template('%s/cn%s.html' % (source, name),source=source)
     else:
         return render_template('index.html' )
