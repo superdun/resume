@@ -1,12 +1,12 @@
 {% set source = source %}
 {% extends '/'+source+'/base.html' %}
 {% block content %}
-        <div id="lang-panel">
-            <a class="lang" href="/cn?source=siemens">中</a>
-            <a class="lang selected" href="#">En</a>
-        </div>
+    <div id="lang-panel">
+        <a class="lang" href="/cn?source=siemens">中</a>
+        <a class="lang selected" href="#">En</a>
+    </div>
     <div id="logo-panel">
-        <h4 class="source">For : <img  id='logo' src="{{ url_for('static',filename='img/'+source +'/logo.png') }}"></h4>
+        <h4 class="source">For : <img id='logo' src="{{ url_for('static',filename='img/'+source +'/logo.png') }}"></h4>
     </div>
     <div id="pagepiling">
         <div class="section center" id="home">
@@ -31,34 +31,42 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    <h2><a href="project/lumpedmodel?source={{ source }}" target="_blank"> Lumped Model Software</a></h2>
+                    <h2><a href="project/lumpedmodel?source={{ source }}" target="_blank"> Lumped Model Software</a>
+                    </h2>
                     <p>Chemical Industry/Python/Scipy/Numpy</p>
                     <p><b>[Independent] </b>Build a desktop software based on a mathematical model</p>
                 </div>
                 <div class="col-2 center">
                     <a class="circle-img" href="/project/refine?source={{ source }}" target="_blank">
-                        <img src="{{ url_for('static',filename='img/jwebaudio.png') }}" alt="Distillation Process Calculation Software"/>
+                        <img src="{{ url_for('static',filename='img/jwebaudio.png') }}"
+                             alt="Distillation Process Calculation Software"/>
                     </a>
                 </div>
                 <div class="col-4">
-                    <h2><a href="/project/refine?source={{ source }}" target="_blank">Distillation Process Calculation Software</a></h2>
+                    <h2><a href="/project/refine?source={{ source }}" target="_blank">Distillation Process Calculation
+                        Software</a></h2>
                     <p>Chemical Industry/JavaScript</p>
-                    <p><b>[Independent] </b>A application for calculating the parameters of the distillation column and drawing plots.<br><a href="http://ecustmaker.com/refine">To View the Demo</a></p>
+                    <p><b>[Independent] </b>A application for calculating the parameters of the distillation column and
+                        drawing plots.<br><a href="http://ecustmaker.com/refine">To View the Demo</a></p>
                 </div>
                 <div class="clearboth"></div>
             </div>
             <div class="row">
                 <div class="col-2 center">
                     <a class="circle-img" href="/project/children?source={{ source }}" target="_blank">
-                        <img src="{{ url_for('static',filename='img/book.png') }}" alt="Analysis of Data for Lost Children"/>
+                        <img src="{{ url_for('static',filename='img/book.png') }}"
+                             alt="Analysis of Data for Lost Children"/>
                     </a>
                 </div>
                 <div class="col-4">
-                    <h2><a href="/project/children?source={{ source }}" target="_blank">Analysis of Data for Lost Children</a></h2>
+                    <h2><a href="/project/children?source={{ source }}" target="_blank">Analysis of Data for Lost
+                        Children</a></h2>
                     <p>Python/Web Crawler/Data Visualization/Data Analysis</p>
-                    <p><b>[Independent]  </b>Crawled information of lost children by script, analyzed the data,prepared a data analysis report.
+                    <p><b>[Independent] </b>Crawl information of lost children by script, analyze the data,prepare a
+                        data analysis report.
                         <br><a
-                            href="https://mp.weixin.qq.com/s?__biz=MzI1NDAyNzQ3MA==&mid=100000008&idx=1&sn=b57f53f691a5b6f5dc46c38af979338b&chksm=69ca32a95ebdbbbf2c11fe42231b8b8163f154cbf9193f54bf50c1e7d8f1e6b0050358434f6f&mpshare=1&scene=1&srcid=0320iqYndh4FOw8oD047p3eN&pass_ticket=ApF8GTHrypRy8viUg4QWMmkbs9L7clUrvB2Mekn0Sgq24Itgv3hYOYHAgu25MCvi#rd">To View The Report</a>
+                                href="https://mp.weixin.qq.com/s?__biz=MzI1NDAyNzQ3MA==&mid=100000008&idx=1&sn=b57f53f691a5b6f5dc46c38af979338b&chksm=69ca32a95ebdbbbf2c11fe42231b8b8163f154cbf9193f54bf50c1e7d8f1e6b0050358434f6f&mpshare=1&scene=1&srcid=0320iqYndh4FOw8oD047p3eN&pass_ticket=ApF8GTHrypRy8viUg4QWMmkbs9L7clUrvB2Mekn0Sgq24Itgv3hYOYHAgu25MCvi#rd">To
+                            View The Report</a>
                     </p>
                 </div>
                 <div class="col-2 center">
@@ -70,7 +78,8 @@
                 <div class="col-4">
                     <h2><a href="/project/guijia?source={{ source }}" target="_blank">guijia.org</a></h2>
                     <p>Python/Web Crawler/flask/MySQL/Web</p>
-                    <p><b>[Independent] </b>Guijia.org is a public welfare website based on face recognition.<br><a href="http://guijia.org">To View guijia.org</a></p>
+                    <p><b>[Independent] </b>Guijia.org is a public welfare website based on face recognition.<br><a
+                            href="http://guijia.org">To View guijia.org</a></p>
                 </div>
                 <div class="clearboth"></div>
             </div>
@@ -93,7 +102,8 @@
                 <div class="col-4">
                     <h2><a href="/project/makerspace?source={{ source }}" target="_blank">ECUST Makerspace</a></h2>
                     <p>Python/Arduino/Sensors/Raspberry Pie</p>
-                    <p>Developed a number of works with Arduino hardware, such as laserengraving machine and 3D scanners</p>
+                    <p>Developed a number of works with Arduino hardware, such as laserengraving machine and 3D
+                        scanners</p>
                 </div>
                 <div class="clearboth"></div>
             </div>
@@ -104,8 +114,9 @@
         <div class="section center" id="Education">
             <h1>Education</h1>
             <h4>East China University of Science and Technology Master</h4>
-            <p>2015.9 to Present</p>
             <p>Oil and gas storage and transportation</p>
+            <p>2015.9 to Present</p>
+
             <p>Construction of chemical industry model software</p>
             <br>
             <h4>Dalian University of Technology Bachelor</h4>
@@ -119,7 +130,7 @@
             <h4>Technical Department of Wallstreetcn</h4>
             <p>2016.5 to Present</p>
             <p>Duty : Operation , maintenance and creation of new features forLinux server of website and App</p>
-            <p>Web , PHP ,LINUX ,MySQL</p>
+            <p>Web ,PHP ,LINUX ,MySQL</p>
             <br>
 
             <h4>Assistant Engineer of Petrochina </h4>
