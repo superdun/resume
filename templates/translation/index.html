@@ -1,0 +1,89 @@
+{% extends "translation/base.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col s0 m1 l2"></div>
+        <div class="input-field col s12 m10 l8">
+            <div class="input-field col s10 m11 l11">
+                <input id="text" type="text" class="validate">
+            </div>
+            <div class="input-field col s2 m1 l1">
+                <a id="send" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">translate</i></a>
+            </div>
+
+        </div>
+
+        <div class="col s0 m1 l2"></div>
+    </div>
+    <div class="row">
+        <div class="col s0 m1 l2"></div>
+        <div class="input-field col s12 m10 l8">
+            <ul id="tabs-swipe-demo " class="tabs tabs-fixed-width">
+                <li class="tab col s3"><a href="#swipe-e " class="active  blue-text text-darken-2"><h3>英</h3></a></li>
+                <li class="tab col s3"><a class="blue-text text-darken-2" href="#swipe-j"><h3>日</h3></a></li>
+            </ul>
+            <div id="swipe-e" class="col s12">
+                <div class="input-field col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">爱词霸</span>
+                            <p id="aiciba_e"></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" id="aiciba_e_url">查看源网页</a>
+                        </div>
+                    </div>
+
+                    {#                    <textarea id="aiciba_e" class="materialize-textarea" readonly></textarea>#}
+                    {#                    <label for="aiciba_e">爱词霸</label>#}
+                </div>
+                <div class="input-field col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">海词网</span>
+                            <p id="haiciwang_e"></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" id="haiciwang_e_url">查看源网页</a>
+                        </div>
+                    </div>
+                    {#                    <textarea id="haiciwang_e" class="materialize-textarea" readonly></textarea>#}
+                    {#                    <label for="haiciwang_e">海词网</label>#}
+                </div>
+                <div class="input-field col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">词都网</span>
+                            <p id="ciduwang_e"></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" id="ciduwang_e_url">查看源网页</a>
+                        </div>
+                    </div>
+                    {#                    <textarea id="ciduwang_e" class="materialize-textarea" readonly></textarea>#}
+                    {#                    <label for="ciduwang_e">词都网</label>#}
+                </div>
+                <div class="input-field col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">谷歌翻译</span>
+                            <p id="gugefanyi_e"></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" id="gugefanyi_e_url">查看源网页</a>
+                        </div>
+                    </div>
+                    {#                    <textarea id="gugefanyi_e" class="materialize-textarea" readonly></textarea>#}
+                    {#                    <label for="gugefanyi_e">谷歌翻译</label>#}
+                </div>
+            </div>
+
+
+            <div id="swipe-j" class="col s12 red">
+
+            </div>
+        </div>
+        <div class="col s0 m1 l2"></div>
+    </div>
+
+
+{% endblock %}

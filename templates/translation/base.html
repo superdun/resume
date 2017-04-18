@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.cnpmjs.org/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}"
+          media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/translationMain.css') }}"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<nav class="blue lighten-1">
+    <div class="nav-wrapper container ">
+        <a href="{{ url_for('translation') }}" class="brand-logo"><i class="material-icons">home</i>翻...牌子</a>
+        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+{#        <ul id="nav-menu" class="right hide-on-med-and-down">#}
+{#            <li><a href="{{ url_for('search') }}">英</a></li>#}
+{#            <li><a href="{{ url_for('emergencyList') }}">日</a></li>#}
+{##}
+{#        </ul>#}
+{#        <ul class="side-nav" id="mobile-nav">#}
+{#            <li><a href="{{ url_for('search') }}">英</a></li>#}
+{#            <li><a href="{{ url_for('emergencyList') }}">日</a></li>#}
+{##}
+{#        </ul>#}
+    </div>
+</nav>
+
+{% block content %}{% endblock %}
+<footer class="page-footer blue lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">相关链接（英文）</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="http://www.iciba.com">爱词霸</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://juhai.dict.cn">海词网</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://www.dictall.com/dictall/result.jsp">词都网</a>
+                    </li>
+                    <li><a class="grey-text text-lighten-3" href="https://translate.google.cn">谷歌翻译</a></li>
+                </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">相关链接（日文）</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="http://ejje.weblio.jp/">不认识网</a></li>
+                    <li><a class="grey-text text-lighten-3"
+                           href="http://dict.hjenglish.com/jp/jc/%E9%85%8D%E5%90%88">沪江</a></li>
+
+
+                    <li><a class="grey-text text-lighten-3" href="https://www.yahoo.co.jp/">雅虎日本</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://cjjc.weblio.jp/content/%E8%A8%98">不认识网2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made By Dun
+
+        </div>
+    </div>
+</footer>
+{% block modal %}
+
+{% endblock %}
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% block script %}{% endblock %}
+</body>
+</html>

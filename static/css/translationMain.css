@@ -1,0 +1,45 @@
+
+.container {
+    width: 90%;
+}
+
+body > div.container{
+    border: 20px;
+}
+.more{
+    font-size: medium;
+    float: right;
+}
+.card .card-content  .click_for_detail{
+    color: #ee6e73;
+}
+.btn, .btn-large{
+    background-color:#ee6e73;
+}
+.btn:hover, .btn-large:hover{
+    background-color: #ee5a5c;
+}
+.btn:focus, .btn-large:focus{
+    background-color: #a14244;
+}
+.detailTd{
+    width:30%;
+    color: #ee6e73;
+}
+.theme_color{
+    background-color: #f7aeb1;
+}
+
+.card-panel {
+    background-color: ghostwhite;
+}
+.tabs .indicator{
+    background-color: #42A5F5 !important;
+    height: 4px;
+}
+.tabs{
+    height: 72px;
+}
+.tabs .tab {
+    height: 72px;
+}
