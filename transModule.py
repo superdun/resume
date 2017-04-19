@@ -30,7 +30,7 @@ class Translate(object):
         self.result_e["ciduwang_e"]["url"] =url
 
         if self.check_contain_chinese(text):
-            url =   u"https://translate.google.cn/translate_a/single?client=t&sl=zh-CN&tl=en&hl=zh-CN&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&ie=UTF-8&oe=UTF-8&source=btn&ssel=5&tsel=5&kc=0&tk=819752.708957&q="+text
+            url =   u"https://translate.google.cn/translate_a/single?client=gtk&sl=zh-CN&tl=en&hl=zh-CN&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&ie=UTF-8&oe=UTF-8&source=btn&ssel=5&tsel=5&kc=0&tk=819752.708957&q="+text
             r = requests.get(url)
             try:
                 self.result_e["gugefanyi_e"]["content"] = json.loads(r.text)[0][0][0]
@@ -38,9 +38,10 @@ class Translate(object):
                 self.result_e["gugefanyi_e"]["content"] = "谷歌翻译挂了！"
             self.result_e["gugefanyi_e"]["url"] =url
         else:
-            url =  u"https://translate.google.cn/translate_a/single?client=t&sl=en&tl=zh-CN&hl=zh-CN&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&ie=UTF-8&oe=UTF-8&swap=1&source=btn&ssel=5&tsel=5&kc=0&tk=135226.279375&q="+text
+            url =  u"https://translate.google.cn/translate_a/single?client=gtk&sl=en&tl=zh-CN&hl=zh-CN&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&ie=UTF-8&oe=UTF-8&swap=1&source=btn&ssel=5&tsel=5&kc=0&tk=135226.279375&q="+text
 
             r = requests.get(url)
+
             try:
                 self.result_e["gugefanyi_e"]["content"] = json.loads(r.text)[0][0][0]
             except ValueError:
@@ -92,5 +93,6 @@ class Translate(object):
             if u'\u4e00' <= ch <= u'\u9fff':
                 return True
         return False
-# trans = Translate()
-# trans.translation_e("apple")
+
+trans = Translate()
+trans.translation_e("apple")
