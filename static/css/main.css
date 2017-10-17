@@ -535,3 +535,9 @@ h2 {
     vertical-align:middle;
 }
 
+.img-container{
+    text-align: center;
+}
+.img-container > img{
+    max-width: 70%;
+}
